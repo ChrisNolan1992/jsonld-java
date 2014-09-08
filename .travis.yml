@@ -3,7 +3,8 @@ jdk:
   - openjdk7
   - oraclejdk7
   - oraclejdk8
-archive:true
+
+archive: true
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
