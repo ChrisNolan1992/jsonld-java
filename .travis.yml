@@ -1,11 +1,9 @@
 language: java
 jdk:
   - openjdk7
-  #- oraclejdk7
-  #- oraclejdk8
-notifications:
-  email: false
-   
+  - oraclejdk7
+  - oraclejdk8
+archive:true
 after_success:
    - mvn clean cobertura:cobertura
    - mvn test
